@@ -1,0 +1,15 @@
+{
+    "LABEL_BRAND": "Brand",
+    "ORDER_LABEL": "Recent Orders",
+    "STATUS": "Status",
+    "DELIVERED": "DELIVERED",
+    "CANCELED": "CANCELED",
+    "CANCELLED": "CANCELLED",
+    "COMPLETE": "COMPLETE",
+    "PENDING": "PENDING",
+    "PROCESSING": "PROCESSING",
+    "ORDER NOT CONFIRMED": "ORDER NOT CONFIRMED",
+    "COMPLETE SHIPPED": "COMPLETE SHIPPED",
+    "CLOSED": "CLOSED",
+    "DELIVERY_DATE": "Expected Delivery Date"
+}

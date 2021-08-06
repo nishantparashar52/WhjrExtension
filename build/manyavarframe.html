@@ -1,0 +1,82 @@
+<style>
+    .frame {
+        z-index: 100;
+        background: #fff;
+        height: 100%;
+    }
+    frame body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .display-flex {
+        display: flex;
+    }
+
+    a {
+        display: flex;
+        text-decoration: none;
+    }
+
+    .space-between {
+        justify-content: space-between;
+    }
+
+    .column {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    .header {
+        z-index: 3;
+        background-color: #8ac5bf;
+        padding: 10px 7px;
+        height: 40px;
+        width: 100%;
+    }
+    .showing {
+        padding: 15px 0 0 15px;
+        margin-bottom: 4px;
+    }
+    .img-wrapper {
+        height: 100px;
+        width: 100%;
+    }
+    .img-wrapper  > img{
+        height: 100%;
+        width: 100%;
+    }
+    .w-90 {
+        width: 90%;
+    }
+</style>
+<div class="frame">
+    <a class="header" href="https://www.lenskart.com?source=lenskart-extension">
+        <img src="https://static.lenskart.com/media/desktop/img/site-images/logo.svg" alt="lenskart" title="lenskart">
+    </a>
+    <!-- <div class="showing">
+        <a id="queryParam" data-metric-target="Keyword" class="a-link-normal query-param white-space-nowrap ui-click-metric" target="_blank" rel="next " title="Bausch & Lomb" href="https://www.lenskart.com/bausch-lomb-soflens-59-6-lenses-box.html">Bausch & Lomb</a> on Lenskart
+    </div> -->
+        <a class="display-flex column shadow" href="https://www.lenskart.com/sunglasses/promotions/vc-new-arrivals.html?source-extension"
+        target="_blank">
+        <div class="img-wrapper">
+            <img src="https://static2.lenskart.com/media/catalog/product/cache/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-full-rim-vc-s12603-c3-sunglasses_g_4403.jpg"
+            />
+        </div>
+        <div class="display-flex space-between w-90">
+            <div class="">Manyavar Collection</div>
+            <div class="">999</div>
+        </div>
+    </a>
+    <a class="display-flex column shadow" href="https://www.lenskart.com/sunglasses/promotions/vc-new-arrivals.html" target="_blank">
+        <div class="img-wrapper">
+            <img src="https://static.lenskart.com/media/catalog/product/cache/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-full-rim-vc-s12597-c2-sunglasses_g_8152_1.jpg"
+            />
+        </div>
+        <div class="display-flex space-between w-90">
+            <div class="">Manyavar New Collection</div>
+            <div class="">999</div>
+        </div>
+    </a>
+</div>

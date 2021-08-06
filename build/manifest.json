@@ -1,0 +1,64 @@
+{
+  "name": "Lenskart Extension",
+  "version": "1.0.0",
+  "description": "Lenskart Extension",
+  "author": "Nishant Parashar, Mayank Kumar",
+  "icons": {
+    "128": "icon.png"
+  },
+  "manifest_version": 2,
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "browsingData",
+    "webRequest",
+    "cookies",
+    "*://*/*",
+    "notifications",
+    "alarms",
+    "storage"
+  ],
+  "background": {
+    "scripts": [
+      "./background.js",
+      "socket.io.js"
+    ],
+    "persistent": true
+  },
+  "content_security_policy": "script-src 'self' 'sha256-JuYOjb4Jv21fHDsPhjHTRd2F4HP1fqQ+9rUwPlTG8Ws='; object-src 'self'",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Lenskart!",
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "contentscript.js"
+      ],
+      "matches": [
+        "https://*/*bausch*"
+      ],
+      "exclude_matches": [
+        "https://www.lenskart.com/*"
+      ],
+      "all_frames": true
+    },
+    {
+      "js": [
+        "contentscript_manyavar.js"
+      ],
+      "matches": [
+        "https://*/*manyavar*", "https://www.manyavar.com/"
+      ],
+      "exclude_matches": [
+        "https://www.lenskart.com/*"
+      ],
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    "frame.html",
+    "manyavarframe.html"
+  ]
+}

@@ -1,0 +1,290 @@
+$breakpoint-eleventabletview: 1100px;
+$breakpoint-mintabletview: 768px;
+$breakpoint-maxtabletview: 1024px;
+$breakpoint-ninetabletview: 992px;
+$breakpoint-fourteen: 1400px;
+$breakpoint-maxscreen: 1152px;
+$breakpoint-tablet: 1104px;
+
+.search {
+  flex-grow: 0.7;
+  @media (min-width: $breakpoint-mintabletview) and (max-width: $breakpoint-ninetabletview) {
+    flex-grow: 0.4;
+  }
+
+  &_block {
+    display: block;
+    position: relative;
+
+    input.input-button {
+      border: none;
+      text-indent: -9999px;
+      width: 24px;
+      height: 22px;
+      float: left;
+      z-index: 1;
+      background: url(https://static.lenskart.com/media/wysiwyg/top-bar-icon_new2.png) -89px -68px;
+      cursor: pointer;
+      margin: 4px 0 0;
+    }
+
+    input[type="text"]:focus {
+      outline: none;
+    }
+
+    input.input-button-inner {
+      border: none;
+      text-indent: -9999px;
+      width: 24px;
+      height: 22px;
+      background: none;
+      cursor: pointer;
+      margin: 4px 0 0;
+      position: absolute;
+      right: 1px;
+      z-index: 11;
+      padding: 10px 13px 15px 13px;
+      top: -1px;
+      right: 4px;
+    }
+  }
+  .search-icon {
+    position: absolute;
+    top: 9px;
+    right: 17px;
+    padding: 5px;
+    background: url(//static.lenskart.com/media/desktop/img/site-images/Asset-6.svg) no-repeat;
+    height: 15px;
+    width: 15px;
+  }
+
+  &_input-bar {
+    z-index: 10;
+    background: #fff;
+    width: 100%;
+    padding: 6px 1% 4px;
+    margin: 0;
+    color: #888;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border: 1px solid #b8b9b9;
+    @media (min-width: $breakpoint-mintabletview) and (max-width: $breakpoint-ninetabletview) {
+        letter-spacing: 0;
+      }
+
+  }
+
+  &_block {
+    .input-button-inner {
+      border: none;
+      text-indent: -9999px;
+      width: 24px;
+      height: 22px;
+      background: none;
+      cursor: pointer;
+      margin: 4px 0 0;
+      position: absolute;
+      right: 1px;
+      z-index: 11;
+      padding: 10px 13px 15px 13px;
+      top: -1px;
+      right: 4px;
+    }
+  }
+
+  &_icon {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    background: url("/assets/svg/search-icon.svg") no-repeat;
+    color: #6d6e71;
+    height: 16px;
+    width: 16px;
+  }
+
+  .search-result {
+    position: absolute;
+    color: #888;
+    width: 100%;
+    border: 1px solid #b8b9b9;
+    background-color: #fff;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    font-size: 13px;
+    z-index: 30000;
+    top: 29px;
+    left: 0;
+    overflow: scroll;
+    max-height: 500px;
+    &.p-10 {
+        padding: 10px;
+    }
+
+    .search-text-heading {
+      color: #4b4c4d;
+      font-size: 14px;
+      padding: 10px 5px 5px 7px;
+      font-weight: 700;
+    }
+
+    .suggestions-list {
+      padding: 2px 7px;
+      color: #7a7a7a;
+      background-color: #fff;
+      line-height: 25px;
+      cursor: pointer;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      &:hover {
+         background-color: #fafafa; 
+      }
+    }
+
+    .popular-product-container {
+      padding: 5px 7px;
+
+      a {
+        color: #7a7a7a;
+        display: block;
+
+        &:hover {
+          color: #7a7a7a;
+          text-decoration: none;
+        }
+      }
+
+      .info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .price {
+        color: #7a7a7a;
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        .fa-rupee-sign {
+            margin-right: 2px;
+            font-size: 12px;
+        }
+      }
+      
+      .image {
+        width: 200px;
+        max-width: 100px;
+        border: 1px solid #dedede;
+      }
+      .brand {
+        color: #4b4c4d;
+        font-weight: 700;
+      }
+      .name {
+          font-size: 12px;
+      }
+
+      .text {
+        margin-left: 15px;
+        max-width: 90%;
+      }
+      &:hover {
+        background-color: #fafafa; 
+     }
+    }
+
+    li:hover {
+      background-color: #fafafa !important;
+      cursor: pointer !important;
+    }
+  }
+  .menu-list {
+    color: #333;
+    font-weight: 700;
+  }
+}
+.trending {
+  position: absolute;
+  width: 100%;
+  color: #888888;
+  z-index: 41;
+  top: 29px;
+  right: 0;
+  left: 0;
+  border: 1px solid #dedede;
+  background-color: #fff;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+
+  h3 {
+    margin: 15px 0 10px;
+    color: #5a5a5a;
+  }
+
+  &_block {
+    padding: 10px;
+  }
+
+  &_list {
+    padding-left: 0;
+    margin-left: 0;
+    list-style-type: none;
+
+    li {
+      width: 100%;
+      padding: 0px !important;
+    }
+
+    a {
+      display: block;
+      font-size: 14px;
+      padding: 6px 8px;
+      text-decoration: none;
+      color: #4b4c4d;
+    }
+
+    a:hover {
+      background: #efefef none repeat scroll 0 0;
+    }
+  }
+  .menu-list {
+    color: #333;
+  }
+}
+
+@media (min-width: $breakpoint-mintabletview) and (max-width: $breakpoint-ninetabletview) {
+  .search_toggle-menu {
+  //  padding-top: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .search_block {
+    margin: 0;
+
+    input[type="text"].search-input-bar {
+      border: 1px solid #d5d4d4;
+      padding: 5px 5px;
+      margin-top: 7px;
+    }
+
+    input.input-button-inner {
+      top: 5px;
+    }
+
+    button {
+      top: 3px;
+      right: 20px;
+    }
+  }
+}
+
+// additional css to set the images insise the searc result
+.unbxd-as-wrapper ul li.unbxd-as-popular-product-grid .unbxd-as-popular-product-image-container img {
+  max-width: 100% !important;
+  width: auto\9;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+}

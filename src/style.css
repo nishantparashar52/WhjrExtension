@@ -1,0 +1,23 @@
+h1, p {
+  font-family: Lato;
+}
+body {
+  min-width: 400px;
+}
+.loader {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+.lens-logo {
+  height: 60px;
+  display: block;
+}
+.lens-logo > img {
+  height: 100%;
+  width: 100%;
+}
+.main-container {
+  margin: 0 20px;
+}

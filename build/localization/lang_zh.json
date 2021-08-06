@@ -1,0 +1,15 @@
+{
+    "LABEL_BRAND": "牌",
+    "ORDER_LABEL": "最近的订单",
+    "STATUS": "状态",
+    "DELIVERED": "已交付",
+    "CANCELED": "取消",
+    "CANCELLED": "取消",
+    "COMPLETE": "完成",
+    "PENDING": "待处理",
+    "PROCESSING": "处理方式",
+    "ORDER NOT CONFIRMED": "订单未确认",
+    "COMPLETE SHIPPED": "完整出货",
+    "CLOSED": "关闭",
+    "DELIVERY_DATE": "预计交货日期"
+}

@@ -1,0 +1,15 @@
+{
+    "LABEL_BRAND": "ब्रांड",
+    "ORDER_LABEL": "हाल के आदेश",
+    "STATUS": "स्थिति",
+    "DELIVERED": "प्रदत्त",
+    "CANCELED": "रद्द",
+    "CANCELLED": "रद्द",
+    "COMPLETE": "पूर्ण",
+    "PENDING": "लंबित",
+    "PROCESSING": "प्रसंस्करण",
+    "ORDER NOT CONFIRMED": "आदेश की पुष्टि नहीं की",
+    "COMPLETE SHIPPED": "पूरा जहाज",
+    "CLOSED": "बन्द",
+    "DELIVERY_DATE": "अपेक्षित वितरण की तारीख"
+}
